@@ -12,6 +12,8 @@ def gui():
     Label(window, text="Name").grid(row=0)
     Label(window, text="Geburtsjahr").grid(row=1)
     
+    global Name, Geburtsjahr
+    
     Name = Entry(window)
     Geburtsjahr = Entry(window)
     
