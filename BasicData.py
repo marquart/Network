@@ -8,7 +8,7 @@ Kategorie = ["Geburtsjahr","Geburtsort","Fachrichtung"]
 def writeBasicData():
     csvfile = open('BasicData.csv', 'a', newline='')
     csvfileWriter = csv.writer(csvfile)
-    csvfileWriter.writerow([Name.get(), selected.get(), FilledKategorie.get()])
+    csvfileWriter.writerow([Name.get(), Kategorie.index(selected.get()), selected.get(), FilledKategorie.get()])
     
     csvfile.close()
 def gui():
