@@ -2,9 +2,9 @@ from tkinter import *
 import csv
 
 def writeBasicData():
-    csvfile = open('BasicData.csv', 'w', newline='')
+    csvfile = open('BasicData.csv', 'a', newline='')
     csvfileWriter = csv.writer(csvfile)
-    csvfileWriter.writerow([Name.get()], [Geburtsjahr.get()])
+    csvfileWriter.writerow([Name.get(), Geburtsjahr.get()])
     
     csvfile.close()
 def gui():
